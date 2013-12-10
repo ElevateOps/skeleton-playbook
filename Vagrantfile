@@ -17,5 +17,10 @@ Vagrant.configure("2") do |config|
       v.customize ["modifyvm", :id, "--memory", 512]
     end
   end
+  
+  config.vm.provision :ansible do |ansible|
+    ansible.playbook = "vagrant.yml"
+    ansible.inventory_path = "vagrant"
+  end
 
 end
