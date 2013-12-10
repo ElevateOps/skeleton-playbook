@@ -1,0 +1,11 @@
+---
+# example tasks
+
+- name: run update
+  sudo: yes
+  apt: update_cache=yes
+
+- name: run upgrade
+  sudo: yes
+  apt: upgrade=safe
+
