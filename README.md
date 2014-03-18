@@ -16,6 +16,9 @@ git clone git@github.com:mark-cooper/skeleton-playbook.git
 Change to the source directory and run:
 
 ```
+cp group_vars/all.example group_vars/all
+cp vagrant.yml.example vagrant.yml
+# edit the above files as preferred
 vagrant up
 ```
 
