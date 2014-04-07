@@ -15,4 +15,4 @@ bin/*
 .chef/
 group_vars/all
 vagrant.yml
-
+Vagrantfile
